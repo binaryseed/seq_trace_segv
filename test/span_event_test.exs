@@ -7,6 +7,8 @@ defmodule SpanEventTest do
 
   @dt_header "newrelic"
 
+  @moduletag skip: true
+
   setup do
     GenServer.call(Collector.AgentRun, :connected)
     :ok

@@ -37,6 +37,8 @@ defmodule DistributedTraceTest do
     end
   end
 
+  @moduletag skip: true
+
   setup do
     GenServer.call(Collector.AgentRun, :connected)
     :ok

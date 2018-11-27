@@ -2,6 +2,8 @@ defmodule CollectorTest do
   use ExUnit.Case
   alias NewRelic.Harvest.Collector
 
+  @moduletag skip: true
+
   defmodule EvilCollectorPlug do
     import Plug.Conn
 
